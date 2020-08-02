@@ -6,14 +6,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+
 }
 
 li, a, button{
     font-family: 'Red Rose', cursive;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #262727;
     text-decoration: none;
 }
 
@@ -22,7 +22,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .logo{
@@ -52,54 +52,106 @@ header{
 button{
     margin-left: 30px;
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
+    border: 1px solid var(--primary-color);
     border-radius: 50px;
     cursor: pointer;
-    transition:all 0.3 ease 0s;
+    transition: 1s;
 }
 
 button:hover{
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 9px 40px;
 }
+
+.unabled{
+  color: #a5a5a5 !important;
+  cursor: no-drop;
+}
+
+
 
 /* Cronograma */
 
 h2{
     margin: 50px 20px 50px 90px;
-    color: #ffffff;
+    color: var(--primary-color);
 }
 
-.curse-table{
+
+.content-table {
     border-collapse: collapse;
+    margin: 25px 100px;
     font-size: 0.9em;
     min-width: 400px;
-    border-color: rgba(255, 255, 255, 0.1);
-    display:inline;
-    margin-left: 70px;
-}
-
-.margin-left{
-    margin-left: 25% !important;
-}
-
-.meta-table{
-    border-collapse: collapse;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-color: rgba(255, 255, 255, 0.);
-    margin: 40px auto;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: var(--primary-color);
     color: #ffffff;
-}
-
-.curse-table thead th, .meta-table thead th{
-    background-color:var(--primary-color);
-    padding: 10px 50px;
-    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
     text-align: center;
-}
+  }
 
-.curse-table tbody th, .meta-table tbody th {
-    padding: 10px 50px;
-    color: #ffffff;
-}
+  .meta{
+    border-bottom: 1px solid #ffffff5d;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  .tables{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-gap: 10px;
+    padding-left: 10%;
+  }
+
+
+  .metas{
+    display: grid;
+    padding: 0px 50px;
+    margin-left: 25px;
+  }
+
+  .meses-1{
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+  }
+
+  .mes{
+    min-width: 340px;
+    max-width: 340px;
+  }
+
+  .meses-2{
+    display: grid;
+    grid-template-columns: repeat(2, 44%);
+    margin-left: 100px;
+  }
+  
+
+  
