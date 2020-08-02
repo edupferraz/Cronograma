@@ -87,7 +87,6 @@ h2{
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-
   }
   
   .content-table thead tr {
@@ -104,7 +103,7 @@ h2{
   }
 
   .meta{
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff5d;
   }
   
   .content-table tbody tr {
@@ -124,5 +123,19 @@ h2{
     color: var(--primary-color);
   }
 
+  .tables{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-gap: 10px;
+    padding-left: 10%;
+  }
+
+
+  .metas{
+    display: grid;
+    padding: 0px 50px;
+    margin-left: 25px;
+  }
+  
 
   
