@@ -136,6 +136,22 @@ h2{
     padding: 0px 50px;
     margin-left: 25px;
   }
+
+  .meses-1{
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+  }
+
+  .mes{
+    min-width: 340px;
+    max-width: 340px;
+  }
+
+  .meses-2{
+    display: grid;
+    grid-template-columns: repeat(2, 44%);
+    margin-left: 100px;
+  }
   
 
   
